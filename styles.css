@@ -26,8 +26,14 @@ body {
   }
   
   .image-content h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+  }
+  
+  .image-content h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
   }
   
   .image-content p {
