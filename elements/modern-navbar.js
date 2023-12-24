@@ -1,7 +1,6 @@
 class ModernNavbar extends HTMLElement {
     connectedCallback() {
-      this.innerHTML = ` 
-      <link rel="stylesheet" href="./elements/modern-navbar.css">
+      this.innerHTML = `
       <nav class="modern-navbar">
         <ul>
           <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>

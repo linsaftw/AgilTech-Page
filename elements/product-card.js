@@ -1,4 +1,3 @@
-// Define the ProductCard class
 class ProductCard extends HTMLElement {
     connectedCallback() {
         // Extract attribute values
@@ -12,7 +11,6 @@ class ProductCard extends HTMLElement {
 
         // Create the HTML structure
         this.innerHTML = `
-        <link rel="stylesheet" href="./elements/product-card.css">
         <div class="product">
             <h3>${name}</h3>
             <img src="${imgSrc}" alt="${name}">
