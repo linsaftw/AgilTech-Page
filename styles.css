@@ -1,0 +1,154 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .fullscreen-image {
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1592890288564-76628a30a657?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uJTIwb24lMjBwaG9uZXxlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .image-content {
+    color: #fff;
+  }
+  
+  .image-content .logo-tech {
+    max-width: 400px;
+    margin: -100px;
+  }
+  
+  .image-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .image-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .scroll-down-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #00909E;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #productos {
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  footer {
+    background-color: #14213D;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+  }
+  
+  .whatsapp-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #25D366; /* WhatsApp green */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .whatsapp-btn::before {
+    content: "\1F4F1"; /* WhatsApp icon Unicode */
+    margin-right: 0.5rem;
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .product img {
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+  
+  .product h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .product image {
+    width: 300;
+    height: 300;
+  }
+
+  .product .price-before {
+    font-size: 0.9rem; /* Adjust the size as needed */
+    color: #666; /* Gray color for the original price */
+    text-decoration: line-through; /* Add a strike line to the text */
+  }
+
+  .product .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .product .free-shipping {
+    color: #28a745; /* Green color for free shipping */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Additional styles for better spacing and alignment */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product a.whatsapp-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #25D366; /* WhatsApp green */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .product a.whatsapp-btn::before {
+    content: "\1F4F1"; /* WhatsApp icon Unicode */
+    margin-right: 0.5rem;
+  }
+  

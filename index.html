@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgilTech - La mejor tecnologia en la palma de tu mano</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add this script tag to the head of your HTML file -->
+  <script>
+    document.addEventListener('DOMContentLoaded', async function () {
+      try {
+        // Function to fetch the blue dollar sell rate from the API
+        const fetchBlueDollarRate = async () => {
+          const response = await fetch('https://api.bluelytics.com.ar/v2/latest');
+          const data = await response.json();
+          return data.blue.value_sell;
+        };
+  
+        // Function to calculate and display converted prices
+        const convertPrice = (className, multiplier, currency) => {
+          const elements = document.querySelectorAll(`.${className}`);
+          
+          elements.forEach(element => {
+            // Extract the numeric value from the element's text content
+            const originalPrice = parseFloat(element.textContent.replace(/[^0-9.]/g, ''));
+            const convertedPrice = originalPrice * multiplier;
+            
+            // Display the converted price with the appropriate formatting
+            element.innerHTML = `<span class="currency">${currency}</span>${convertedPrice.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
+          });
+        };
+  
+        // Call the fetchBlueDollarRate function and update prices when the page is loaded
+        const blueDollarSellRate = await fetchBlueDollarRate();
+  
+        // Use a fallback multiplier (1000) if there is an issue fetching the blue dollar rate
+        const multiplier = blueDollarSellRate || 1000;
+  
+        convertPrice('price-before', multiplier, 'ARS ');
+        convertPrice('price', multiplier, 'ARS ');
+      } catch (error) {
+        console.error('Error fetching or converting prices:', error);
+  
+        // Use a fallback multiplier (1000) in case of an error
+        const multiplier = 1000;
+  
+        convertPrice('price-before', multiplier, 'ARS ');
+        convertPrice('price', multiplier, 'ARS ');
+      }
+    });
+  </script>
+</head>
+<body>
+  <section class="fullscreen-image">
+    <div class="image-content">
+      <img class="logo-tech" src="https://i.imgur.com/Vum2IZx.png" alt="AgilTech Logo">
+      <p>Descubri la última tecnología en accesorios para móviles.</p>
+      <a href="#productos" class="scroll-down-btn">&#8595; Explora</a>
+    </div>
+  </section>
+
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+
+    <div class="product-grid">
+        <!-- Auriculares F9-5 -->
+        <div class="product">
+            <h3>Auriculares F9-5 TWS</h3>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_606799-MLA53246315039_012023-F.webp" alt="Auriculares F9-5 TWS">
+            <p>In-Ear, Resistente al agua, HD Audio</p>
+            <p class="price-before"><span class="currency">USD </span>11</p>
+            <p class="price"><span class="currency">USD </span>11</p>
+            <p class="free-shipping">Envío gratis</p>
+            <a href="https://wa.me/+5491132126617?text=Me%20interesan%20los%20F9-5%20TWS" target="_blank" class="whatsapp-btn">Comprar por WhatsApp</a>
+        </div>
+        <!-- Xiaomi Smart Band 7 -->
+        <div class="product">
+            <h3>Xiaomi Smart Band 7</h3>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_784809-MLU72277100296_102023-F.webp" alt="Xiaomi Smart Band 7">
+            <p>Bluetooth, Ritmo cardiaco, Bateria 14 dias</p>
+            <p class="price-before"><span class="currency">USD </span>60</p>
+            <p class="price"><span class="currency">USD </span>53</p>
+            <p class="free-shipping">Envío gratis</p>
+            <a href="https://wa.me/+5491132126617?text=Me%20interesa%20el%20Xiaomi%20Smart%20Band%207" target="_blank" class="whatsapp-btn">Comprar por WhatsApp</a>
+        </div>
+        <!-- Xiaomi Redmi Note 12 -->
+        <div class="product">
+            <h3>Xiaomi Redmi Note 12</h3>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_864432-MLA54954927923_042023-F.webp" alt="Xiaomi Redmi Note 12">
+            <p>4G Dual SIM 128 GB gris ónix 4 GB RAM</p>
+            <p class="price-before"><span class="currency">USD </span>280</p>
+            <p class="price"><span class="currency">USD </span>270</p>
+            <p class="free-shipping">Envío gratis</p>
+            <a href="https://wa.me/+5491132126617?text=Me%20interesa%20el%20Xiaomi%20Redmi%20Note%2012" target="_blank" class="whatsapp-btn">Comprar por WhatsApp</a>
+        </div>
+        <!-- Samsung Galaxy S23 ULTRA -->
+        <div class="product">
+            <h3>Samsung Galaxy S23 ULTRA</h3>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_811341-MLU72749128339_112023-F.webp" alt="Samsung Galaxy S23 Ultra">
+            <p>12GB de RAM, 256GB, Snapdragon 888</p>
+            <p class="price-before"><span class="currency">USD </span>2500</p>
+            <p class="price"><span class="currency">USD </span>2400</p>
+            <p class="free-shipping">Envío gratis</p>
+            <a href="https://wa.me/+5491132126617?text=Me%20interesa%20el%20Samsung%20Galaxy%20S23%20ULTRA" target="_blank" class="whatsapp-btn">Comprar por WhatsApp</a>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 AgilTech - La mejor tecnología en la palma de tu mano</p>
+  </footer>
+</body>
+</html>
