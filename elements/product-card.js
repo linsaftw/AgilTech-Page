@@ -7,7 +7,7 @@ class ProductCard extends HTMLElement {
         const priceBefore = this.getAttribute('price-before') || '0';
         const price = this.getAttribute('price') || '0';
         const whatsappText = "Me interesa " + name;
-        const whatsappNumber = "+5491132126617";
+        const whatsappNumber = "+5491123809742";
 
         // Create the HTML structure
         this.innerHTML = `
