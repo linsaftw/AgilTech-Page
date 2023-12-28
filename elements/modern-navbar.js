@@ -30,7 +30,6 @@ class ModernNavbar extends HTMLElement {
             <a href="#"><i class="fas fa-address-book"></i>Contacto</a>
             <div class="dropdown-content">
               <a href="https://wa.me/5491123809742"><i class="fab fa-whatsapp"></i>Whatsapp</a>
-              <a href="mailto:info@agiltech.cc"><i class="fas fa-envelope"></i>Email</a>
             </div>
           </li>
         </ul>
