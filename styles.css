@@ -61,6 +61,16 @@ body {
   cursor: pointer;
 }
 
+.dis-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #7289da;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 #productos {
   padding: 2rem;
   background-color: #fff;
