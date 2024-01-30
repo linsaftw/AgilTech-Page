@@ -17,6 +17,25 @@
   background-color: #128C7E; /* Darker shade on hover */
 }
 
+/* WhatsApp button */
+.buy-btn {
+  display: inline-block;
+  padding: 1rem 0rem;
+  background-color: orange; /* WhatsApp green */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Added transition effect */
+}
+
+.buy-btn:hover {
+  background-color: rgb(192, 125, 0); /* Darker shade on hover */
+}
+
 /* Product styles */
 .product {
   border: 1px solid #ddd;

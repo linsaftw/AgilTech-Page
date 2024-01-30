@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago Exitoso - AgilTech</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="elements/modern-navbar.css">
+  <link rel="stylesheet" href="elements/product-card.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Metaetiquetas -->
+  <meta name="description" content="Tu compra en AgilTech ha sido exitosa. ¡Gracias por elegirnos!">
+  <meta property="og:title" content="Pago Exitoso - AgilTech">
+  <meta property="og:description" content="Tu compra en AgilTech ha sido exitosa. ¡Gracias por elegirnos!">
+  <meta property="og:image" content="https://i.imgur.com/Vum2IZx.png">
+  <meta property="og:url" content="https://www.example.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pago Exitoso - AgilTech">
+  <meta name="twitter:description" content="Tu compra en AgilTech ha sido exitosa. ¡Gracias por elegirnos!">
+  <meta name="twitter:image" content="https://i.imgur.com/Vum2IZx.png">
+
+  <!-- Custom Elements -->
+  <script defer src="./elements/modern-navbar.js" lang="javascript"></script>
+  <script defer src="./elements/product-card.js" lang="javascript"></script>
+</head>
+<body>
+  <modern-navbar></modern-navbar>
+  <section id="payment-success" class="success">
+    <h2>¡ATENCION! ¡Un paso mas!</h2>
+    <p>Gracias por tu compra en AgilTech.</p>
+    <p>Por favor, ingresa la siguiente información para la entrega:</p>
+    <form id="contact-form">
+      <label for="nombre">Nombre y apellido (tal como figura en el DNI):</label><br>
+      <input type="text" id="nombre" name="nombre" required><br>
+      
+      <label for="codigo-postal">Código postal:</label><br>
+      <input type="text" id="codigo-postal" name="codigo-postal" placeholder="No sé mi código" required><br>
+      
+      <label for="provincia">Provincia:</label><br>
+      <input type="text" id="provincia" name="provincia" required><br>
+      
+      <label for="localidad">Localidad o barrio:</label><br>
+      <input type="text" id="localidad" name="localidad" required><br>
+      
+      <label for="calle">Calle/Avenida:</label><br>
+      <input type="text" id="calle" name="calle" required><br>
+      
+      <label for="numero">Número:</label><br>
+      <input type="text" id="numero" name="numero"><br>
+      
+      <input type="checkbox" id="sin-numero" name="sin-numero">
+      <label for="sin-numero">Sin número</label><br>
+      
+      <label for="piso">Piso/Departamento (opcional):</label><br>
+      <input type="text" id="piso" name="piso"><br>
+      
+      <label for="entre-calles">¿Entre qué calles está? (opcional):</label><br>
+      <input type="text" id="calle1" name="calle1" placeholder="Calle 1"><br>
+      <input type="text" id="calle2" name="calle2" placeholder="Calle 2"><br>
+      
+      <label>¿Es tu trabajo o tu casa?</label><br>
+      <input type="radio" id="trabajo" name="lugar" value="Trabajo">
+      <label for="trabajo">Trabajo</label><br>
+      <input type="radio" id="casa" name="lugar" value="Casa">
+      <label for="casa">Casa</label><br>
+      
+      <label for="telefono">Teléfono de contacto:</label><br>
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ej.: 1123456789" required><br>
+      
+      <label for="indicaciones">Indicaciones adicionales de esta dirección (opcional):</label><br>
+      <textarea id="indicaciones" name="indicaciones"></textarea><br>
+      
+      <button type="submit" id="whatsapp-btn" class="success-contact">Contactar por WhatsApp</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 AgilTech - La mejor tecnología en la palma de tu mano</p>
+  </footer>
+
+  <!-- Script para enviar mensaje por WhatsApp -->
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const nombre = document.getElementById('nombre').value;
+      const codigoPostal = document.getElementById('codigo-postal').value;
+      const provincia = document.getElementById('provincia').value;
+      const localidad = document.getElementById('localidad').value;
+      const calle = document.getElementById('calle').value;
+      const numero = document.getElementById('numero').value;
+      const sinNumero = document.getElementById('sin-numero').checked ? "Sin número" : "";
+      const piso = document.getElementById('piso').value;
+      const calle1 = document.getElementById('calle1').value;
+      const calle2 = document.getElementById('calle2').value;
+      const lugar = document.querySelector('input[name="lugar"]:checked').value;
+      const telefono = document.getElementById('telefono').value;
+      const indicaciones = document.getElementById('indicaciones').value;
+      
+      const whatsappText = `Nombre y apellido: ${nombre}\nCódigo postal: ${codigoPostal}\nProvincia: ${provincia}\nLocalidad o barrio: ${localidad}\nCalle/Avenida: ${calle}\nNúmero: ${numero}\n${sinNumero}\nPiso/Departamento: ${piso}\nEntre qué calles está: ${calle1} y ${calle2}\nLugar: ${lugar}\nTeléfono de contacto: ${telefono}\nIndicaciones adicionales: ${indicaciones}`;
+      const whatsappNumber = "+5491123809742"; // Coloca tu número de WhatsApp aquí
+      const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
+      
+      window.location.href = whatsappLink;
+    });
+  </script>
+  
+</body>
+</html>
