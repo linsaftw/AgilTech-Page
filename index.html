@@ -12,16 +12,16 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-  <meta name="description" content="Descubre la última tecnología en accesorios para móviles con AgilTech. Auriculares, smart bands, smartphones y más. ¡Explora ahora!">
+  <meta name="description" content="Explora la última tecnología en accesorios para celular con AgilTech. Encuentra auriculares, smart bands, teléfonos Samsung y más. ¡Descubre ahora!">
   
   <meta property="og:title" content="AgilTech - La mejor tecnología en la palma de tu mano">
-  <meta property="og:description" content="Descubre la última tecnología en accesorios para móviles con AgilTech. Auriculares, smart bands, smartphones y más. ¡Explora ahora!">
+  <meta property="og:description" content="Explora la última tecnología en accesorios para celular con AgilTech. Encuentra auriculares, smart bands, teléfonos Samsung y más. ¡Descubre ahora!">
   <meta property="og:image" content="https://i.imgur.com/Vum2IZx.png">
   <meta property="og:url" content="https://www.example.com">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="AgilTech - La mejor tecnología en la palma de tu mano">
-  <meta name="twitter:description" content="Descubre la última tecnología en accesorios para móviles con AgilTech. Auriculares, smart bands, smartphones y más. ¡Explora ahora!">
+  <meta name="twitter:description" content="Explora la última tecnología en accesorios para celular con AgilTech. Encuentra auriculares, smart bands, teléfonos Samsung y más. ¡Descubre ahora!">
   <meta name="twitter:image" content="https://i.imgur.com/Vum2IZx.png">
 
   <!-- Custom Elements -->
@@ -31,46 +31,28 @@
 <body>
   <modern-navbar></modern-navbar>
   <section class="fullscreen-image">
-    <div class="image-content">
-      <img class="logo-tech" src="https://i.imgur.com/Vum2IZx.png" alt="AgilTech Logo">
-      <div class="social-buttons">
-        <a href="https://www.instagram.com/real.agiltech/" class="social-button"><img src="images/instagram.webp" alt="Instagram"></a>
-        <a href="https://www.tiktok.com/@real.agiltech" class="social-button"><img src="images/tiktok.avif" alt="TikTok"></a>
-        <a href="https://www.youtube.com/@real.agiltech" class="social-button"><img src="images/youtube-shorts.png" alt="YouTube Shorts"></a>
-      </div>
-      <h1>AgilTech - La mejor tecnología en la palma de tu mano</h1>
-      <h2>Descubri la última tecnología en accesorios para móviles.</h2>
-      <a href="#productos" class="scroll-down-btn">&#128269; Explora</a>
-      <a href="https://wa.me/+5491123809742?text=Hola!+Vengo+de+la+web." target="_blank" class="wpp-button"><span class="fab fa-whatsapp"></span>Contacto</a>
-      <a href="https://discord.gg/sxJNXB2mNn" target="_blank" class="dis-button"><span class="fab fa-discord"></span>Discord</a>
-    </div>
+    <div class="image-content"></div>
   </section>
 
   <section id="productos">
-    <h2>Nuestros Productos</h2>
-
-    <div class="product-grid">
+    <h2>Productos</h2>
+    <div class="product-grid" id="productos">
       <product-card
       name="PC Gamer ARGUS 3000"
       img-src="https://i.imgur.com/U6piynJ.jpg"
       description="RTX 3090, 8GBx2, 3.7GHz 6C 12T, 480GB"
-      price-before="2800"
-      price="2000"
+      price="2500"
       ></product-card>
-
       <product-card
       name="Auriculares F9-5 TWS"
       img-src="https://http2.mlstatic.com/D_NQ_NP_2X_606799-MLA53246315039_012023-F.webp"
       description="In-Ear, Resistente al agua, HD Audio"
-      price-before="14"
       price="7"
       ></product-card>
-
       <product-card
       name="Infinix Hot 30i"
       img-src="https://http2.mlstatic.com/D_NQ_NP_2X_911049-MLA70170970463_062023-F.webp"
       description="5000mAh 4GB/128GB 8Mpx"
-      price-before="240"
       price="150"
       ></product-card>
     
@@ -78,7 +60,6 @@
         name="Xiaomi Smart Band 7"
         img-src="https://http2.mlstatic.com/D_NQ_NP_2X_784809-MLU72277100296_102023-F.webp"
         description="Bluetooth, Ritmo cardiaco, Bateria 14 dias"
-        price-before="65"
         price="35"
       ></product-card>
     
@@ -86,7 +67,6 @@
         name="TCL 408"
         img-src="https://http2.mlstatic.com/D_NQ_NP_2X_839839-MLU72741987213_112023-F.webp"
         description="6GB RAM, 64GB, Mediatek MT6572"
-        price-before="210"
         price="130"
       ></product-card>
     
@@ -94,7 +74,6 @@
         name="TCL 40 Nxtpaper"
         img-src="https://http2.mlstatic.com/D_NQ_NP_2X_971892-MLA73196398456_122023-F.webp"
         description="8GB RAM, 256GB, Mediatek Helio G37"
-        price-before="410"
         price="250"
       ></product-card>
     
@@ -102,7 +81,6 @@
         name="Xiaomi Redmi Note 12"
         img-src="https://http2.mlstatic.com/D_NQ_NP_2X_864432-MLA54954927923_042023-F.webp"
         description="Dual SIM, 128 GB, 4GB RAM"
-        price-before="280"
         price="200"
       ></product-card>
     
@@ -110,7 +88,6 @@
         name="Samsung Galaxy S23 ULTRA"
         img-src="https://http2.mlstatic.com/D_NQ_NP_2X_811341-MLU72749128339_112023-F.webp"
         description="12GB RAM, 256GB, Snapdragon 888"
-        price-before="2500"
         price="1200"
       ></product-card>
     
@@ -118,7 +95,6 @@
         name="Samsung Galaxy A34"
         img-src="https://http2.mlstatic.com/D_NQ_NP_2X_885596-MLA54688652817_032023-F.webp"
         description="6GB RAM, 128GB, 5000mAh, MT6877"
-        price-before="480"
         price="300"
       ></product-card>
     
@@ -126,7 +102,6 @@
         name="Samsung Galaxy S20 FE"
         img-src="https://http2.mlstatic.com/D_NQ_NP_2X_963639-MLA52540581236_112022-F.webp"
         description="6GB RAM, 128GB, 4500mAh, snapdragon 865"
-        price-before="360"
         price="300"
       ></product-card>
     </div>

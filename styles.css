@@ -6,8 +6,8 @@ body {
 }
 
 .fullscreen-image {
-  height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1592890288564-76628a30a657?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uJTIwb24lMjBwaG9uZXxlbnwwfHwwfHx8MA%3D%3D');
+  height: 50vh;
+  background-image: url('./images/agt-banner-tienda.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -74,6 +74,7 @@ body {
 #productos {
   padding: 2rem;
   background-color: #fff;
+  text-align: center;
 }
 
 footer {
