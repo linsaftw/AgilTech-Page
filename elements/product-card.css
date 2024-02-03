@@ -21,7 +21,7 @@
 .buy-btn {
   display: inline-block;
   padding: 1rem 0rem;
-  background-color: orange; /* WhatsApp green */
+  background-color: #00AEEF; /* WhatsApp green */
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -33,7 +33,7 @@
 }
 
 .buy-btn:hover {
-  background-color: rgb(192, 125, 0); /* Darker shade on hover */
+  background-color: #0F70B6; /* Darker shade on hover */
 }
 
 /* Product styles */

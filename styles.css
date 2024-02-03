@@ -5,14 +5,35 @@ body {
   color: #333;
 }
 
-.fullscreen-image {
-  height: 50vh;
-  background-image: url('./images/agt-banner-tienda.jpg');
-  background-size: cover;
-  background-position: center;
+#carouselExample {
+  padding-top: 50px;
+}
+
+/* Set max-height for the carousel */
+#myCarousel {
+  max-height: 600px; /* Adjust the height as needed */
+}
+
+/* Ensure images fit within the carousel */
+.carousel-inner img {
+    width: 100%;
+    max-height: 600px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+.bi-gray {
+  color: #808080; /* Gray color code */
+}
+
+.container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 10px;
+}
+
+.column {
+  width: 25%;
+  padding: 20px;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -92,12 +113,36 @@ body {
 }
 
 footer {
-  background-color: #14213D;
+  background-color: black;
   color: #fff;
-  text-align: center;
-  padding: 1rem;
-  position: relative; /* Added position relative for better positioning */
-  bottom: 0;
+  padding: 40px 0;
+  margin-top: 50px;
+  min-height: 200px; /* Set a minimum height to vertically center */
+}
+
+footer h5 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+  list-style: none; /* Remove bullet points */
+}
+
+footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 14px;
 }
 
 /* Responsive styles for smaller screens */
@@ -161,6 +206,7 @@ footer {
 .success {
   align-items: center;
   text-align: center;
+  margin-top: 120px;
 }
 
 /* PAGO EXITOSO */
