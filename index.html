@@ -47,21 +47,24 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./images/s23-2k.webp" class="d-block w-100" alt="...">
+        <video src="./videos/s23.webm" class="d-block w-100" alt="..." autoplay muted loop>
+        </video>
         <div class="carousel-caption">
           <h2><b>Explora la línea Samsung</b></h2>
           <h4>Descubre una amplia gama de productos innovadores</h4>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./images/xiaomi.webp" class="d-block w-100" alt="...">
+        <video src="./videos/xiaomi-mix.webm" class="d-block w-100" alt="..." autoplay muted loop>
+        </video>
         <div class="carousel-caption">
           <h2><b>Innovación y Valor Xiaomi</b></h2>
           <h4>Productos vanguardistas a precios asequibles</h4>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./images/motorola.avif" class="d-block w-100" alt="...">
+        <video src="./videos/motorola.webm" class="d-block w-100" alt="..." autoplay muted loop>
+        </video>
         <div class="carousel-caption">
           <h2><b>Tecnología Avanzada Motorola</b></h2>
           <h4>Descubre los últimos avances en dispositivos móviles</h4>
@@ -103,7 +106,20 @@
   </div>
 
   <section id="productos">
-    <h2><b>Productos</b></h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 text-end">
+          <hr class="gray-line-left">
+        </div>
+        <div class="col-4 text-center">
+          <h2><b>Los más vendidos</b></h2>
+        </div>
+        <div class="col-4 text-start">
+          <hr class="gray-line-right">
+        </div>
+      </div>
+    </div>    
+    
     <div class="product-grid" id="productos">
       <product-card
       name="PC Gamer ARGUS 3000"
