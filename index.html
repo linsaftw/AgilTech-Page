@@ -34,6 +34,8 @@
   <script defer src="./elements/modern-navbar.js" lang="javascript"></script>
   
   <script defer src="./elements/modern-footer.js" lang="javascript"></script>
+  
+  <script defer src="./elements/news-card.js" lang="javascript"></script>
 </head>
 <body>
   <modern-navbar></modern-navbar>
@@ -70,7 +72,6 @@
           <h4>Descubre los últimos avances en dispositivos móviles</h4>
         </div>
       </div>
-      
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -85,22 +86,22 @@
   <div class="container">
     <div class="column">
       <i class="bi bi-truck bi-gray" style="font-size: 4rem;"></i>
-      <h3><strong>Envío Gratis</strong></h3>
+      <h4><strong>Envío Gratis</strong></h4>
       <p>Entrega gratuita en todos los pedidos.</p>
     </div>
     <div class="column">
       <i class="bi bi-shield-shaded bi-gray" style="font-size: 4rem;"></i>
-      <h3><strong>Garantía</strong></h3>
+      <h4><strong>Garantía</strong></h4>
       <p>Garantía de 30 días en todos nuestros productos.</p>
     </div>
     <div class="column">
       <i class="bi bi-currency-dollar bi-gray" style="font-size: 4rem;"></i>
-      <h3><strong>Precio</strong></h3>
+      <h4><strong>Precio</strong></h4>
       <p>Productos de calidad a precios competitivos.</p>
     </div>
     <div class="column">
       <i class="bi bi-lock bi-gray" style="font-size: 4rem;"></i>
-      <h3><strong>Seguridad</strong></h3>
+      <h4><strong>Seguridad</strong></h4>
       <p>Compra segura y protegida en línea.</p>
     </div>
   </div>
@@ -208,6 +209,49 @@
         price="210000"
         mp="2txDRyP"
       ></product-card>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 text-end">
+          <hr class="gray-line-left">
+        </div>
+        <div class="col-4 text-center">
+          <h3><b>Ultimas Noticias</b></h3>
+        </div>
+        <div class="col-4 text-start">
+          <hr class="gray-line-right">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <news-card img-src="./images/news/new1.jpg" title="WhatsApp Plus: La Última Versión de Febrero 2024 Está Aquí" link="/noticia1.html"></news-card>
+        </div>
+        <div class="col-md-3">
+          <news-card img-src="./images/news/new2.jpg" title="Todo lo que Debes Saber sobre las Criptomonedas" link="/noticia2.html"></news-card>
+        </div>
+        <div class="col-md-3">
+          <news-card img-src="./images/news/new3.jpg" title="Descubre el Nuevo Samsung Galaxy S24 Ultra para Creadores de Contenido" link="/noticia3.html"></news-card>
+        </div>
+        <div class="col-md-3">
+          <news-card img-src="./images/news/new4.jpg" title="Batalla Épica en la Industria Musical: Universal Music Amenaza con Retirar su Catálogo de TikTok" link="/noticia4.html"></news-card>
+        </div>
+        <div class="col-md-3">
+          <news-card img-src="./images/news/new5.jpg" title="Mark Zuckerberg en el Banquillo: Arrepentido, pide disculpas en una Audiencia explosiva en el Congreso de EE. UU." link="/noticia5.html"></news-card>
+        </div>
+        <div class="col-md-3">
+          <news-card img-src="./images/news/new6.jpg" title="La Revolución Silenciosa: Cómo la Inteligencia Artificial Se Apodera de Nuestras Vidas" link="/noticia6.html"></news-card>
+        </div>
+        <div class="col-md-3">
+          <news-card img-src="./images/news/new7.jpg" title="Infancia Conectada: Navegando Entre Pantallas" link="/noticia7.html"></news-card>
+        </div>
+        <div class="col-md-3">
+          <news-card img-src="./images/news/new8.jpg" title="Bing: Más Allá del Buscador - Explorando la IA de Microsoft" link="/noticia8.html"></news-card>
+        </div>
+      </div>
     </div>
   </section>
 
