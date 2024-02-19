@@ -14,12 +14,14 @@ class ProductCard extends HTMLElement {
         // Create the HTML structure
         this.innerHTML = `
         <div class="product">
-            <img src="${imgSrc}" alt="${name}">
-            <h4>${name}</h4>
-            <p class="price-before"><span class="strikethrough"><span class="currency">ARS </span>${priceBefore.toLocaleString('en')}</span><span class="discount">50% OFF</span></p>
-            <p class="price"><span class="currency">ARS </span>${price.toLocaleString('en')}</p>            
-            <p class="free-shipping">Envío GRATIS</p>
-            <a href="${link}" target="_blank" class="buy-btn">Comprar Ahora</a>
+            <a href="${link}">
+                <img src="${imgSrc}" alt="${name}">
+                <h4>${name}</h4>
+                <p class="price-before"><span class="strikethrough"><span class="currency">ARS </span>${priceBefore.toLocaleString('en')}</span><span class="discount">50% OFF</span></p>
+                <p class="price"><span class="currency">ARS </span>${price.toLocaleString('en')}</p>            
+                <p class="free-shipping">Envío GRATIS</p>
+                <a href="${link}" target="_blank" class="buy-btn">Comprar Ahora</a>
+            </a>
         </div>
         `;
     }
