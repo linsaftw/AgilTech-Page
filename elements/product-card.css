@@ -20,9 +20,10 @@
 /* WhatsApp button */
 .buy-btn {
   display: inline-block;
-  padding: 1rem 0rem;
-  background-color: #00AEEF; /* WhatsApp green */
+  padding: 0.5rem 0rem;
+  background-color: black; /* WhatsApp green */
   color: #fff;
+  font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 1rem;
@@ -38,7 +39,6 @@
 
 /* Product styles */
 .product {
-  border: 1px solid #ddd;
   padding: 1rem;
   margin-bottom: 1rem;
   background-color: #fff;
@@ -52,14 +52,22 @@
 }
 
 .product img {
-  height: 300px;
+  height: 200px;
   margin-bottom: 1rem;
   border-radius: 8px;
   object-fit: cover; /* Ensure the image covers the entire box */
 }
 
-.product h3 {
-  font-size: 1.5rem;
+.discount {
+  padding-left: 10px;
+  color:#25D366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
@@ -71,6 +79,9 @@
 .product .price-before {
   font-size: 0.9rem;
   color: #666;
+}
+
+.product .strikethrough {
   text-decoration: line-through;
 }
 

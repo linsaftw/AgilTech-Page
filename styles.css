@@ -5,6 +5,10 @@ body {
   color: #333;
 }
 
+.column h4 {
+  font-size: medium;
+}
+
 .content-section {
   margin-top: 100px;
   text-align: center;
