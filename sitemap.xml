@@ -1,47 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-    <url>
-        <loc>https://agiltech.cc/</loc>
-        <lastmod>2024-02-05T03:42:23+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://agiltech.cc/nosotros.html</loc>
-        <lastmod>2024-02-05T03:42:23+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://agiltech.cc/noticia1.html</loc>
-        <lastmod>2024-02-05T03:42:23+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://agiltech.cc/noticia2.html</loc>
-        <lastmod>2024-02-05T03:42:23+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://agiltech.cc/noticia3.html</loc>
-        <lastmod>2024-02-05T03:42:23+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://agiltech.cc/noticia4.html</loc>
-        <lastmod>2024-02-05T03:42:23+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://agiltech.cc/noticia5.html</loc>
-        <lastmod>2024-02-05T03:42:23+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://agiltech.cc/noticia6.html</loc>
-        <lastmod>2024-02-05T03:42:23+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://agiltech.cc/noticia7.html</loc>
-        <lastmod>2024-02-05T03:42:23+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://agiltech.cc/noticia8.html</loc>
-        <lastmod>2024-02-05T03:42:23+00:00</lastmod>
-    </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://149.56.111.63/</loc>
+  <lastmod>2024-02-20T04:29:44+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://149.56.111.63/nosotros.html</loc>
+  <lastmod>2024-02-20T01:41:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://149.56.111.63/articulos/whatsapp-plus-actualizacion</loc>
+  <lastmod>2024-02-20T04:29:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://149.56.111.63/articulos/todo-sobre-las-criptomonedas</loc>
+  <lastmod>2024-02-20T04:29:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://149.56.111.63/articulos/el-nuevo-s24-para-creadores-de-contenido</loc>
+  <lastmod>2024-02-20T04:29:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://149.56.111.63/articulos/universal-contra-tiktok</loc>
+  <lastmod>2024-02-20T04:29:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://149.56.111.63/articulos/mark-zuckerberg-arrepentido</loc>
+  <lastmod>2024-02-20T04:29:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://149.56.111.63/articulos/la-ia-se-apodera-de-nuestras-vidas</loc>
+  <lastmod>2024-02-20T04:29:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://149.56.111.63/articulos/infancia-conectada</loc>
+  <lastmod>2024-02-20T04:29:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://149.56.111.63/articulos/bing-la-ia-de-microsoft</loc>
+  <lastmod>2024-02-20T04:29:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://149.56.111.63/articulos/avances-de-la-tecnologia</loc>
+  <lastmod>2024-02-20T04:29:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
