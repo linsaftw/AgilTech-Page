@@ -18,7 +18,7 @@ app.get('*', async (req, res) => {
     const enteredPath = req.path.slice(1); // Remove the leading slash from the path
     const filePath = path.join(__dirname, 'views', `${enteredPath}.ejs`);
 
-    console.log(`IP: ${req.ip}, Entered Path: ${enteredPath}`);
+    console.log(`IP: ${req.ip}, Entered Path: /${enteredPath}`);
 
     try {
         // Check if the requested EJS file exists
