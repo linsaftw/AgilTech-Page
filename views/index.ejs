@@ -1,0 +1,252 @@
+<%- include('header.ejs', { title: "AgilTech - Celulares en oferta" }) %>
+
+<body>
+    <%- include('navbar.ejs')  %>
+  
+    <!-- Carousel Example -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <video src="./videos/samsung-galaxy-s23.mp4" class="d-block w-100" alt="..." autoplay muted loop>
+            </video>
+            <div class="carousel-caption">
+            <h2><b>Explora la línea Samsung</b></h2>
+            <h4>Descubre una amplia gama de productos innovadores</h4>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <video src="./videos/xiaomi-mix.webm" class="d-block w-100" alt="..." autoplay muted loop>
+            </video>
+            <div class="carousel-caption">
+            <h2><b>Innovación y Valor Xiaomi</b></h2>
+            <h4>Productos vanguardistas a precios asequibles</h4>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <video src="./videos/motorola.webm" class="d-block w-100" alt="..." autoplay muted loop>
+            </video>
+            <div class="carousel-caption">
+            <h2><b>Tecnología Avanzada Motorola</b></h2>
+            <h4>Descubre los últimos avances en dispositivos móviles</h4>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container">
+      <div class="column">
+        <i class="bi bi-truck bi-gray" style="font-size: 4rem;"></i>
+        <h4><strong>Envío Gratis</strong></h4>
+        <p>Entrega gratuita en todos los pedidos.</p>
+      </div>
+      <div class="column">
+        <i class="bi bi-shield-shaded bi-gray" style="font-size: 4rem;"></i>
+        <h4><strong>Garantía</strong></h4>
+        <p>Garantía de 30 días en todos nuestros productos.</p>
+      </div>
+      <div class="column">
+        <i class="bi bi-currency-dollar bi-gray" style="font-size: 4rem;"></i>
+        <h4><strong>Precio</strong></h4>
+        <p>Productos de calidad a precios competitivos.</p>
+      </div>
+      <div class="column">
+        <i class="bi bi-lock bi-gray" style="font-size: 3.5rem;"></i>
+        <h4><strong>Seguridad</strong></h4>
+        <p>Compra segura y protegida en línea.</p>
+      </div>
+    </div>
+  
+    <section id="productos">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 text-end">
+            <hr class="gray-line-left">
+          </div>
+          <div class="col-4 text-center">
+            <h3><b>Los más vendidos</b></h3>
+          </div>
+          <div class="col-4 text-start">
+            <hr class="gray-line-right">
+          </div>
+        </div>
+      </div>    
+      
+      <div class="product-grid" id="productos">
+        <product-card
+        name="PC Gamer ARGUS 3000"
+        img-src="./images/argus3000.jpg"
+        description="RTX 3090, 8GBx2, 3.7GHz 6C 12T, 480GB"
+        price="2700000"
+        mp="2D34xuB"
+        ></product-card>
+  
+        <product-card
+        name="Auriculares F9-5 TWS"
+        img-src="https://http2.mlstatic.com/D_NQ_NP_2X_606799-MLA53246315039_012023-F.webp"
+        description="In-Ear, Resistente al agua, HD Audio"
+        price="10000"
+        mp="2ukx7BB"
+        ></product-card>
+  
+        <product-card
+        name="Infinix Hot 30i"
+        img-src="https://http2.mlstatic.com/D_NQ_NP_2X_911049-MLA70170970463_062023-F.webp"
+        description="5000mAh 4GB/128GB 8Mpx"
+        price="270000"
+        mp="22dbrUn"
+        ></product-card>
+      
+        <product-card
+          name="Xiaomi Smart Band 7"
+          img-src="https://http2.mlstatic.com/D_NQ_NP_2X_784809-MLU72277100296_102023-F.webp"
+          description="Bluetooth, Ritmo cardiaco, Bateria 14 dias"
+          price="55000"
+          mp="21JhEaY"
+        ></product-card>
+      
+        <product-card
+          name="TCL 408"
+          img-src="https://http2.mlstatic.com/D_NQ_NP_2X_839839-MLU72741987213_112023-F.webp"
+          description="6GB RAM, 64GB, Mediatek MT6572"
+          price="140000"
+          mp="2JABnfr"
+        ></product-card>
+      
+        <product-card
+          name="TCL 40 Nxtpaper"
+          img-src="https://http2.mlstatic.com/D_NQ_NP_2X_971892-MLA73196398456_122023-F.webp"
+          description="8GB RAM, 256GB, Mediatek Helio G37"
+          price="350000"
+          mp="1uexECP"
+        ></product-card>
+      
+        <product-card
+          name="Xiaomi Redmi Note 12"
+          img-src="https://http2.mlstatic.com/D_NQ_NP_2X_864432-MLA54954927923_042023-F.webp"
+          description="Dual SIM, 128 GB, 4GB RAM"
+          price="250000"
+          mp="24Mz378"
+        ></product-card>
+      
+        <product-card
+          name="Samsung Galaxy S23 ULTRA"
+          img-src="https://http2.mlstatic.com/D_NQ_NP_2X_811341-MLU72749128339_112023-F.webp"
+          description="12GB RAM, 256GB, Snapdragon 888"
+          price="1500000"
+          mp="1qZgked"
+        ></product-card>
+      
+        <product-card
+          name="Samsung Galaxy A34"
+          img-src="https://http2.mlstatic.com/D_NQ_NP_2X_885596-MLA54688652817_032023-F.webp"
+          description="6GB RAM, 128GB, 5000mAh, MT6877"
+          price="340000"
+          mp="18KXdjY"
+        ></product-card>
+      
+        <product-card
+          name="Samsung Galaxy S20 FE"
+          img-src="https://http2.mlstatic.com/D_NQ_NP_2X_963639-MLA52540581236_112022-F.webp"
+          description="6GB RAM, 128GB, 4500mAh, snapdragon 865"
+          price="400000"
+          mp="2txDRyP"
+        ></product-card>
+      
+        <product-card
+          name="Galaxy A7 Lite"
+          img-src="https://http2.mlstatic.com/D_NQ_NP_2X_764089-MLU72560153567_102023-F.webp"
+          description="3GB RAM, 32GB, 5100mAh, Helio P22T"
+          price="210000"
+          mp="2txDRyP"
+        ></product-card>
+      </div>
+  
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 text-end">
+            <hr class="gray-line-left">
+          </div>
+          <div class="col-4 text-center">
+            <h3><b>Ultimas Noticias</b></h3>
+          </div>
+          <div class="col-4 text-start">
+            <hr class="gray-line-right">
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="row">
+            <%- include('article-card.ejs', {
+                imgSrc: "/images/articulos/whatsapp-plus-actualizacion.jpg",
+                title: "WhatsApp Plus: La Última Versión de Febrero 2024 Está Aquí",
+                link: "/articulos/whatsapp-plus-actualizacion"
+            })  %>
+            
+            <%- include('article-card.ejs', {
+                imgSrc: "/images/articulos/todo-sobre-las-criptomonedas.jpg",
+                title: "Todo lo que Debes Saber sobre las Criptomonedas",
+                link: "/articulos/todo-sobre-las-criptomonedas.jpg"
+            })  %>
+            
+            <%- include('article-card.ejs', {
+                imgSrc: "/images/articulos/el-nuevo-s24-para-creadores-de-contenido.jpg",
+                title: "Descubre el Nuevo Samsung Galaxy S24 Ultra para Creadores de Contenido",
+                link: "/articulos/el-nuevo-s24-para-creadores-de-contenido"
+            })  %>
+            
+            <%- include('article-card.ejs', {
+                imgSrc: "/images/articulos/universal-contra-tiktok.jpg",
+                title: "Desacuerdo Contractual: El Poder de Universal Music en Juego",
+                link: "/articulos/universal-contra-tiktok"
+            })  %>
+            
+            <%- include('article-card.ejs', {
+                imgSrc: "/images/articulos/mark-zuckerberg-arrepentido.jpg",
+                title: "Mark Zuckerberg en el Banquillo: Arrepentido, pide disculpas en una Audiencia explosiva en el Congreso de EE. UU.",
+                link: "/articulos/mark-zuckerberg-arrepentido"
+            })  %>
+            
+            <%- include('article-card.ejs', {
+                imgSrc: "/images/articulos/la-ia-se-apodera-de-nuestras-vidas.jpg",
+                title: "La Revolución Silenciosa: Cómo la Inteligencia Artificial Se Apodera de Nuestras Vidas",
+                link: "/articulos/la-ia-se-apodera-de-nuestras-vidas"
+            })  %>
+            
+            <%- include('article-card.ejs', {
+                imgSrc: "/images/articulos/infancia-conectada.jpg",
+                title: "Infancia Conectada: Navegando Entre Pantallas",
+                link: "/articulos/infancia-conectada"
+            })  %>
+            
+            <%- include('article-card.ejs', {
+                imgSrc: "/images/articulos/bing-la-ia-de-microsoft.jpg",
+                title: "Bing: Más Allá del Buscador - Explorando la IA de Microsoft",
+                link: "/articulos/bing-la-ia-de-microsoft"
+            })  %>
+            
+            <%- include('article-card.ejs', {
+                imgSrc: "/images/articulos/tecnologia-innovadora.jpg",
+                title: "Tecnología Innovadora: Avances y Desafíos en el Mundo Digital",
+                link: "/articulos/articulos/avances-de-la-tecnologia"
+            })  %>
+      </div>
+    </section>
+  
+    <modern-footer></modern-footer>
+  </body>
+  </html>
+  

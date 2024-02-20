@@ -1,0 +1,22 @@
+.navbar-text {
+    margin-left: auto;
+  }
+  
+  .inverted-image {
+    filter: invert(100%);
+  }
+
+  .navbar-link {
+    text-decoration: none;
+  }
+
+  .navbar-text small {
+    color: #ccc;
+    font-size: 0.8rem;
+    margin-right: 10px;
+  }
+  
+  .navbar-text a {
+    color: #ccc;
+    margin-left: 5px;
+  }

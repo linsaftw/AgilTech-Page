@@ -1,0 +1,30 @@
+<section class="content-section">
+    <div class="content-container">
+        <h1><%= title %></h1>
+        <h3><%= subtitle %></h3>
+        <hr>
+        <img src="<%= img %>" alt="<%= title %>" class="section-image">
+        <hr>
+        <% content.forEach(function(paragraph) { %>
+            <% if (paragraph.startsWith("(h4)")) { %>
+                <h4><%= paragraph.substring(4) %></h4>
+            <% } else { %>
+                <p><%= paragraph %></p>
+            <% } %>
+        <% }); %>
+    </div>
+</section>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4 text-end">
+      <hr class="gray-line-left">
+    </div>
+    <div class="col-4 text-center">
+      <h3><b>Gracias por leer</b></h3>
+    </div>
+    <div class="col-4 text-start">
+      <hr class="gray-line-right">
+    </div>
+  </div>
+</div>

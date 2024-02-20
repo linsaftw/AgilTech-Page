@@ -1,0 +1,343 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.column h4 {
+  font-size: medium;
+}
+
+.content-section {
+  margin-top: 150px;
+  text-align: center;
+  padding: 0 20px; /* Ajusta el padding a tu preferencia */
+}
+
+.content-container {
+  max-width: 800px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.content-container h1 {
+  font-weight: bolder;
+  text-align: left;
+}
+
+.content-container h3 {
+  text-align: left;
+}
+
+.content-container h4 {
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 10px;
+  font-weight: bolder;
+}
+
+.content-container p {
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.content-container img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.section-image {
+  max-width: 100%; /* La imagen se ajustará al ancho máximo del contenedor */
+  height: auto; /* La altura se ajustará automáticamente */
+}
+
+.news-card {
+  margin-bottom: 20px;
+  position: relative;
+  width: 300px; /* Set fixed width for the card */
+  height: 300px; /* Set fixed height for the card */
+  color: white;
+  text-shadow: black 0px 0 10px;
+}
+
+.news-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.news-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+}
+
+#news-item {
+  width: 300px;
+}
+
+#carouselExample {
+  padding-top: 50px;
+}
+
+/* Set max-height for the carousel */
+#myCarousel {
+  max-height: 600px; /* Adjust the height as needed */
+}
+
+.carousel-caption {
+  text-shadow: black 0 0 5px;
+}
+
+/* Ensure images fit within the carousel */
+.carousel-inner img {
+    width: 100%;
+    max-height: 600px; /* Adjust the height as needed */
+    min-height: 300px;
+    object-fit: cover;
+}
+
+/* Ensure images fit within the carousel */
+.carousel-inner video {
+    width: 100%;
+    max-height: 600px; /* Adjust the height as needed */
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.bi-gray {
+  color: #808080; /* Gray color code */
+}
+
+.container {
+  display: flex;
+  margin: 10px;
+}
+
+.column {
+  width: 25%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Adjust height for smaller screens */
+@media only screen and (max-width: 768px) {
+  .fullscreen-image {
+    height: 25vh; /* Decrease height for smaller screens */
+  }
+}
+
+/* Adjust height for smaller screens */
+@media only screen and (max-width: 512px) {
+  .fullscreen-image {
+    height: 20vh; /* Decrease height for smaller screens */
+  }
+}
+
+.image-content {
+  color: #fff;
+}
+
+.image-content .logo-tech {
+  max-width: 400px;
+  margin: -75px 0; /* Adjusted margin for better positioning */
+}
+
+.image-content h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.image-content h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.image-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.scroll-down-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #00909E;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wpp-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dis-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #7289da;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#productos {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 40px 0;
+  margin-top: 50px;
+  min-height: 200px; /* Set a minimum height to vertically center */
+}
+
+footer h5 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+  list-style: none; /* Remove bullet points */
+}
+
+footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .image-content .logo-tech {
+      max-width: 300px;
+  }
+
+  .image-content h1 {
+      font-size: 1.2rem;
+  }
+
+  .image-content h2 {
+      font-size: 1rem;
+  }
+
+  .image-content p {
+      font-size: 1rem;
+  }
+
+  .scroll-down-btn {
+      padding: 0.8rem 1.5rem;
+  }
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center; /* or use space-between for even more spacing */
+  align-items: center; /* Center the items vertically */
+  margin: 20px;
+}
+
+.social-button {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.social-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.success-contact {
+  padding: 1rem 0rem;
+  background-color: #25D366; /* WhatsApp green */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease; /* Added transition effect */
+}
+
+.success-contact:hover {
+  background-color: #128C7E; /* Darker shade on hover */
+}
+
+.success {
+  align-items: center;
+  text-align: center;
+  margin-top: 120px;
+}
+
+/* PAGO EXITOSO */
+#payment-success {
+  padding: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.whatsapp-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.whatsapp-link:hover {
+  text-decoration: underline;
+}

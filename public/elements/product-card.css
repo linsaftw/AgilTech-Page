@@ -1,0 +1,125 @@
+/* WhatsApp button */
+.whatsapp-btn {
+  display: inline-block;
+  padding: 1rem 0rem;
+  background-color: #25D366; /* WhatsApp green */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Added transition effect */
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E; /* Darker shade on hover */
+}
+
+.product a {
+    text-decoration: none;
+}
+
+/* WhatsApp button */
+.buy-btn {
+  display: inline-block;
+  padding: 0.5rem 0rem;
+  background-color: black; /* WhatsApp green */
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Added transition effect */
+}
+
+.buy-btn:hover {
+  background-color: #0F70B6; /* Darker shade on hover */
+}
+
+/* Product styles */
+.product {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Added transition effect */
+}
+
+.product:hover {
+  transform: translateY(-5px); /* Lift the product on hover */
+}
+
+.product img {
+  height: 200px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  object-fit: cover; /* Ensure the image covers the entire box */
+}
+
+.discount {
+  padding-left: 10px;
+  color:#25D366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product h4 {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.product p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product .price-before {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.product .strikethrough {
+  text-decoration: line-through;
+}
+
+.product .price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.product .free-shipping {
+  color: #28a745;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Additional styles for better spacing and alignment */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .whatsapp-btn,
+  .product {
+      width: 100%; /* Make the buttons and products take full width on small screens */
+  }
+
+  .product img {
+      height: 200px; /* Adjust image height for better visibility on small screens */
+  }
+}
