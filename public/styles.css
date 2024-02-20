@@ -15,6 +15,59 @@ body {
   padding: 0 20px; /* Ajusta el padding a tu preferencia */
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.f9-5 {
+  text-align: center;
+}
+
+.social-icons-buttons {
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.social-icons-buttons a {
+  margin: 20px;
+}
+
+.f9-5-specs {
+  width: 50%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.f9-5-blackbox {
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
+.f9-5-blackbox img {
+  margin: 40px;
+  max-width: 300px;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
 .content-container {
   max-width: 800px; /* Ancho máximo del contenido */
   margin: 0 auto; /* Centra el contenido horizontalmente */

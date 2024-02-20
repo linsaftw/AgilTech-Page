@@ -9,7 +9,7 @@ class ProductCard extends HTMLElement {
         const whatsappText = "Me interesa " + name;
         const whatsappNumber = "+5491123809742";
         const containsMP = this.getAttribute('mp') != null;
-        const link = containsMP ? ("https://mpago.la/" + this.getAttribute('mp')) : "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(whatsappText);
+        const link = containsMP ? (this.getAttribute('mp')) : "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(whatsappText);
 
         // Create the HTML structure
         this.innerHTML = `
