@@ -63,6 +63,11 @@ body {
   height: 300px; /* Set fixed height for the card */
   color: white;
   text-shadow: black 0px 0 10px;
+  transition: transform 0.3s ease; /* Added transition effect */
+}
+
+.news-card:hover {
+  transform: translateY(-5px); /* Lift the product on hover */
 }
 
 .news-img {
