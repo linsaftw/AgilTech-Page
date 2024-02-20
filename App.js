@@ -50,10 +50,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Define route to dynamically render EJS templates based on the entered path
 app.get('*', async (req, res) => {
+    const userAgent = req.headers['user-agent'];
     const enteredPath = req.path.slice(1); // Remove the leading slash from the path
     const filePath = path.join(__dirname, 'views', `${enteredPath}.ejs`);
 
-    console.log(`IP: ${req.ip}, Name: ${getRandomName(req.ip)}, Entered Path: ${enteredPath}`);
+    console.log(`IP: ${req.ip}, Name: ${getRandomName(req.ip + userAgent)}, Entered Path: ${enteredPath}`);
 
     try {
         // Check if the requested EJS file exists
