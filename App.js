@@ -16,29 +16,6 @@ const names = [
     'Aidan', 'Brooke', 'Cole', 'Daphne', 'Elijah', 'Felicity', 'Gabe', 'Holly', 'Isaiah', 'Joy'
   ];
 
-// Function to generate a hash from the IP address
-function hashCode(ipAddress) {
-  var hash = 0, i, chr;
-  if (ipAddress.length === 0) return hash;
-  for (i = 0; i < ipAddress.length; i++) {
-    chr = ipAddress.charCodeAt(i);
-    hash = ((hash << 5) - hash) + chr;
-    hash |= 0; // Convert to 32bit integer
-  }
-  return hash;
-}
-
-function getRandomName(ipAddress) {
-  // Generate a hash from the IP address
-  const hash = hashCode(ipAddress);
-
-  // Map the hash to an index in the names array
-  const index = Math.abs(hash) % names.length;
-
-  // Assign the name associated with the index to the request object
-  return names[index];
-}
-
 // Set the view engine to EJS
 app.set('view engine', 'ejs');
 
@@ -48,13 +25,31 @@ app.set('views', path.join(__dirname, 'views'));
 // Middleware to serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Middleware to assign a random name based on user agent
+app.use((req, res, next) => {
+  // Extract the user-agent header from the request
+  const userAgent = req.headers['user-agent'];
+
+  // Generate a hash from the user-agent
+  const hash = crypto.createHash('md5').update(userAgent).digest('hex');
+
+  // Convert the hash to a number and use it to select a random name from the list
+  const index = parseInt(hash, 16) % names.length;
+  const randomName = names[index];
+
+  // Assign the random name to a property in the request object
+  req.randomName = randomName;
+
+  // Continue to the next middleware
+  next();
+});
+
 // Define route to dynamically render EJS templates based on the entered path
 app.get('*', async (req, res) => {
-    const userAgent = req.headers['user-agent'];
     const enteredPath = req.path.slice(1); // Remove the leading slash from the path
     const filePath = path.join(__dirname, 'views', `${enteredPath}.ejs`);
 
-    console.log(`IP: ${req.ip}, Agent: ${userAgent}, Entered Path: ${enteredPath}`);
+    console.log(`IP: ${req.ip}, Name: ${req.randomName}, Entered Path: ${enteredPath}`);
 
     try {
         // Check if the requested EJS file exists
